@@ -99,3 +99,14 @@ The script exports the results to your defined output directory:
 - `Summary.xlsx`: A cell-by-cell summary detailing origin classification, normalized slopes, R² values, and relative differences.
 - `Raw_Data.csv`: Pixel-level raw and normalized intensities paired with their respective distance values for custom downstream plotting.
 - `SVG_Figures/`: Directory containing the isolated `.svg` plots for the chosen representative cells.
+
+  ## Citation
+
+If you use these scripts in your research, please cite our manuscript:
+
+Alma Alva, Rogelio Hernández-Tamayo, Carmen Guadarrama, Paúl Hernández-Herrera, Martin Thanbichler, Peter L. Graumann, Christopher Wood, Adán Guerrero, José Luis Puente. *Intracellular spatial dynamics of GrlR and GrlA in EPEC: Implications for virulence regulation.* (Submitted)
+
+## **Authors**
+
+* **[Alma Alva]** - *Biological Concept & Data Analysis*
+* **[Paúl Hernández-Herrera]** - *Python Implementation & Optimization* -(https://github.com/paul-hernandez-herrera)
