@@ -53,7 +53,7 @@ To ensure full reproducibility, the following software environment is required:
 ---
 
 ## Data Availability
-Representative datasets, including raw microscopy images and corresponding ROI sets needed to test this pipeline, are publicly available on Zenodo (DOI: [Insert Zenodo DOI Here]). 
+Representative datasets, including raw microscopy images and corresponding ROI sets needed to test this pipeline, are publicly available on Zenodo:  
 
 ---
 
