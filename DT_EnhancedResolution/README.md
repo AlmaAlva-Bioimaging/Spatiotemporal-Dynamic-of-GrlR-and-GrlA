@@ -104,7 +104,7 @@ The script exports the results to your defined output directory:
 
 If you use these scripts in your research, please cite our manuscript:
 
-Alma Alva, Rogelio Hernández-Tamayo, Carmen Guadarrama, Paúl Hernández-Herrera, Martin Thanbichler, Peter L. Graumann, Christopher Wood, Adán Guerrero, José Luis Puente. *Intracellular spatial dynamics of GrlR and GrlA in EPEC: Implications for virulence regulation.* (Submitted)
+Alma Alva, Rogelio Hernández-Tamayo, Carmen Guadarrama, Paúl Hernández-Herrera, Martin Thanbichler, Peter L. Graumann, Christopher Wood, Adán Guerrero, José Luis Puente. *Spatiotemporal organization and stoichiometry of GrlR and GrlA dictate virulence gene expression in enteropathogenic Escherichia coli.* (Submitted)
 
 ## **Authors**
 
