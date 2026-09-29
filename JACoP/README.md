@@ -1,4 +1,4 @@
-# MSSR to 16-Bit JACoP Conversion and Colocalization Pipeline
+# Colocalization analysis with JACoP
 
 This repository module contains the complete analytical workflow for preparing enhanced-resolution images and executing automated batch colocalization analysis using the BIOP JACoP plugin (https://github.com/BIOP/ijp-jacop-b) in ImageJ/Fiji.
 
