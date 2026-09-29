@@ -12,17 +12,17 @@ The repository is organized into four sequential analytical modules. Each folder
 
 ### 📁 [01_MSSR_and_Distance_Transform](./01_MSSR_and_Distance_Transform)
 **Function:** Image resolution enhancement with MSSR and Distance Transform analysis.
-- Pre-process diffraction-limited images to be cropped to have 1 cell per field of view, ideally
-- Automates the batch processing of cropped raw diffraction-limited images using the Mean Shift Super Resolution (MSSR) algorithm
-- Utilizes Python to perform Euclidean Distance Transform calculations directly on the MSSR outputs
-- Extracts 1D spatial intensity profiles and evaluates relative intensity differences along the bacterial cell
+- Pre-processes diffraction-limited images to be cropped to have 1 cell per field of view, ideally.
+- Automates the batch processing of cropped raw diffraction-limited images using the Mean Shift Super Resolution (MSSR) algorithm.
+- Utilizes Python to perform Euclidean Distance Transform calculations directly on the MSSR outputs.
+- Extracts 1D spatial intensity profiles and evaluates relative intensity differences along the bacterial cell.
 
 ### 📁 [02_SMT_Distance_Transform](./02_SMT_Distance_Transform)
-**Function:** Distance Transform analysis applied to SMT datasets
-- Processes single-molecule tracking data based on MATLAB to classify each trajectory into 'Static', 'Transient' or 'Mobile'
-- Generates confinement maps
-- Performs targeted Euclidean Distance Transform analysis 
-- Generates comprehensive KDE plots to identify the location of each track within the cell 
+**Function:** Distance Transform analysis applied to SMT datasets.
+- Processes single-molecule tracking data based on MATLAB to classify each trajectory into 'Static', 'Transient ', or 'Mobile'.
+- Generates confinement maps.
+- Performs targeted Euclidean Distance Transform analysis.
+- Generates comprehensive KDE plots to identify the location of each track within the cell.
 
 ### 📁 [03_JACoP_Colocalization](./03_JACoP_Colocalization)
 **Function:** Format normalization and automated colocalization.
@@ -58,6 +58,6 @@ Representative datasets, including raw microscopy images and corresponding ROI s
 ---
 
 ## Citation
-If you utilize any of these pipeline or modified portions of this code in your research, please cite the corresponding manuscript:
+If you utilize any of these pipelines or modified portions of this code in your research, please cite the corresponding manuscript:
 
 > **Alma Alva, Rogelio Hernández-Tamayo, Carmen Guadarrama, Paúl Hernández-Herrera, Martin Thanbichler, Peter L. Graumann, Christopher Wood, Adán Guerrero, José Luis Puente1.** (2026). *Spatiotemporal organization and stoichiometry of GrlR and GrlA dictate virulence gene expression in enteropathogenic Escherichia coli. Under Review.
