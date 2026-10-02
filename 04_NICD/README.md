@@ -1,4 +1,4 @@
-# NICD Recursive Spatial Analysis Pipeline
+# NICD Spatial Analysis Pipeline
 
 This module contains the advanced ImageJ/Fiji recursive macro (`NICD`) designed to process hierarchical experimental directories and execute automated two-channel spatial distribution and proximity analyses on enhanced-resolution images.
 
