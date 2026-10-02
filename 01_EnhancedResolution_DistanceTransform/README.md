@@ -1,4 +1,4 @@
-# Module 1: MSSR and Distance Transform Analysis (Version 2.0)
+# Module 1: Enhanced-resolution and Distance Transform Analysis (Version 2.0)
 
 This repository module contains the complete analytical pipeline to evaluate the spatial dynamics and subcellular localization of GrlR and GrlA in enteropathogenic *Escherichia coli* (EPEC). The workflow is divided into three sequential steps: image pre-processing from diffraction-limited crops, Mean Shift Super Resolution (MSSR) enhancement, and Euclidean distance transform analysis.
 
