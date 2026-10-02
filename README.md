@@ -8,14 +8,14 @@ The computational workflow integrates Mean Shift Super Resolution (MSSR), Euclid
 
 The repository is organized into four sequential analytical modules. Each folder contains its own detailed `README.md` with specific execution instructions, metadata parsing rules, and expected directory structures.
 
-### 📁 01_Distance_Transform (Version 2.0)
+### 📁 01_EnhancedResolution_DistanceTransform (Version 2.0)
 **Function:** Image resolution enhancement with MSSR and unbiased Distance Transform analysis.
 *   Pre-processes diffraction-limited images to isolate individual cells per field of view.
 *   Automates the batch processing of cropped raw diffraction-limited images using the Mean Shift Super Resolution (MSSR).
 *   Utilizes Python to perform Euclidean Distance Transform calculations directly on the MSSR outputs.
 *   **V2.0 Update:** Extracts intensity profiles incorporating fluorescence intensity normalization to evaluate relative intensity differences along the bacterial cell, eliminating biases caused by varying protein expression levels.
 
-### 📁 02_SMT_Distance_Transform
+### 📁 02_SMT_DistanceTransform
 **Function:** Distance Transform analysis applied to SMT datasets.
 *   Processes MATLAB-based single-molecule tracking data to classify each trajectory into 'Static', 'Transient', or 'Mobile'.
 *   Generates confinement maps and performs targeted Euclidean Distance Transform analysis.
@@ -26,7 +26,7 @@ The repository is organized into four sequential analytical modules. Each folder
 *   **Python Script:** Converts 32-bit floating-point MSSR outputs into quantitative 16-bit multi-channel stacks without distorting absolute fluorescence distributions.
 *   **Fiji Macro:** Automates batch colocalization analysis utilizing the BIOP JACoP plugin, applying ROI-restricted Otsu thresholding to extract Pearson's and Manders' overlap coefficients.
 
-### 📁 04_NICD_Analysis
+### 📁 04_NICD
 **Function:** Advanced recursive spatial metrics and population-level correlation.
 *   Recursively traverses hierarchical experimental directories (`Strain/Medium/Time`) to analyze the spatial behavior of non-overlapping protein fractions.
 *   Calculates the directed Nearest Inter-Channel Distance (NICD) and computes the non-parametric Proximity Area Under the Curve (AUC) using 32-bit Euclidean Distance Maps via the `NICD_recursive_dataset_v0_7_3.ijm` macro.
