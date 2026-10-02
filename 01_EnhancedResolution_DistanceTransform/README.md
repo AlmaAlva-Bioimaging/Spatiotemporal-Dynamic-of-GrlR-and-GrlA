@@ -1,4 +1,4 @@
-# Distance Transform Analysis Pipeline
+# Module 1: MSSR and Distance Transform Analysis (Version 2.0)
 
 This repository module contains the complete analytical pipeline to evaluate the spatial dynamics and subcellular localization of GrlR and GrlA in enteropathogenic *Escherichia coli* (EPEC). The workflow is divided into three sequential steps: image pre-processing from diffraction-limited crops, Mean Shift Super Resolution (MSSR) enhancement, and Euclidean distance transform analysis.
 
@@ -37,8 +37,9 @@ The script generates a new analysis directory containing the following subfolder
 
 ## Step 2: Mean Shift Super Resolution (MSSR) Batch Processing
 
-This step applies the Mean Shift Super Resolution (MSSR) algorithm to the individual, diffraction-limited single-channel crops generated in Step 1. Due to the memory-intensive nature of the MSSR mathematical transformations, this process is executed via a standalone Python script rather than a Jupyter Notebook to ensure stability and prevent kernel crashes.
-Download MSSR from: https://github.com/adanog/MSSR
+This step applies the Mean Shift Super Resolution (MSSR) algorithm to the individual, diffraction-limited single-channel crops generated in Step 1. Due to the memory-intensive nature of the MSSR mathematical transformations, this process is executed via a standalone Python script rather than a Jupyter Notebook to ensure stability and prevent kernel crashes. 
+*Download MSSR from:* [https://github.com/adanog/MSSR](https://github.com/adanog/MSSR)
+
 ### Features
 - **Batch Execution:** Automatically processes all `.tif` files within the designated input directory.
 - **Optimized for Fluorescence:** Implements active intensity normalization (`INT_NORM = True`) and bicubic interpolation (`FTI = False`) to preserve quantitative fluorescence properties.
@@ -64,6 +65,7 @@ Run this script directly from the Conda terminal to manage memory effectively.
 4. Execute the Python file:
    ```bash
    python 02_run_mssr_batch.py
+   ```
 ### Note: Ensure you update the input_dir and output_dir variables within the script before execution
 
 ## Step 3: Distance Transform Analysis & Subcellular Localization
@@ -73,7 +75,7 @@ This Jupyter Notebook performs the final spatial analysis on the enhanced-resolu
 ## Features
 - **Spatial Masking:** Converts scaled Fiji ROIs into integer label masks for accurate single-cell isolation.
 - **Euclidean Distance Transform:** Utilizes OpenCV (`cv2.distanceTransform`) to assign a relative distance value to every pixel within the cell boundary.
-- **Intensity Normalization & Regression:** Applies min-max normalization (0 to 1) to the fluorescence signal and calculates the linear regression of the intensity profile.
+- **Robust Intensity Normalization (V2.0 Update)**: Applies min-max normalization to the fluorescence signal and calculates relative intensity differences adjusted by the mean cellular intensity (np.mean(intensity_norm) + 1e-6). This update removes artifacts and biases from varying expression levels across cells, ensuring accurate evaluation of spatial distributions.
 - **Automated Classification:** Evaluates the relative intensity difference across the cell. A negative slope indicates **Membrane** localization, a positive slope indicates **Cytoplasm**, and values within the `DISPERSED_THRESHOLD` (± 0.10) are classified as **Dispersed**.
 - **Publication-Ready Figures:** Automatically generates localized scatter plots with linear fit lines in vector format (`.svg`) using the Okabe-Ito color palette for specific cells designated in the `CELLS_FOR_FIGURE` list.
 
@@ -90,9 +92,9 @@ Ensure the following libraries are installed in your Python environment:
 
 ### Parameters
 Before running the notebook, verify the following variables match your experimental setup:
-- `PIXEL_SIZE_NM = 23.4`: Defines the spatial resolution.
-- `DISPERSED_THRESHOLD = 0.10`: Threshold for classifying a uniform (dispersed) distribution.
-- `FIXED_THRESHOLD = 10`: Background intensity cutoff to exclude background noise.
+- `PIXEL_SIZE_NM = `: Defines the spatial resolution. 
+- `DISPERSED_THRESHOLD = `: Threshold for classifying a uniform (dispersed) distribution.
+- `FIXED_THRESHOLD = `: Background intensity cutoff to exclude background noise. 
 
 ### Output Structure
 The script exports the results to your defined output directory:
