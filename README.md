@@ -2,7 +2,7 @@
 
 This repository contains a comprehensive suite of Python scripts and ImageJ/Fiji macros designed to quantify the subcellular localization, spatiotemporal dynamics, and colocalization of protein complexes (such as GrlR and GrlA) in enteropathogenic *Escherichia coli* (EPEC). 
 
-The computational workflow integrates Mean Shift Super Resolution (MSSR), Euclidean Distance Transform calculations, Single-Molecule Tracking (SMT), automated colocalization, and advanced spatial metrics (NICD and Proximity AUC) to process high-resolution fluorescence microscopy datasets recursively.
+The computational workflow integrates Mean Shift Super Resolution (MSSR), Euclidean Distance Transform calculations, Single-Molecule Tracking (SMT), automated colocalization, and spatial metrics (NICD and Proximity AUC) to process high-resolution fluorescence microscopy datasets recursively.
 
 ## 📊 Pipeline Architecture & Modules
 
