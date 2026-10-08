@@ -48,7 +48,7 @@ To ensure full reproducibility, the following software environment is required:
 ## 📂 Data Availability
 
 Representative datasets, including raw microscopy and enhanced-resolution images, corresponding ROI sets, and SMT results needed to test these pipelines, are available in each folder. 
-Our complete datasets are publicly available on Zenodo: **[10.5281/zenodo.19410960]**
+Our complete datasets are publicly available on Zenodo: **[Datasets](https://doi.org/10.5281/zenodo.23068141)**
 
 ## 📝 Citation
 
