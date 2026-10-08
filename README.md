@@ -48,10 +48,10 @@ To ensure full reproducibility, the following software environment is required:
 ## 📂 Data Availability
 
 Representative datasets, including raw microscopy and enhanced-resolution images, corresponding ROI sets, and SMT results needed to test these pipelines, are available in each folder. 
-Our complete datasets are publicly available on Zenodo: **[Insert Zenodo DOI Link Here]**
+Our complete datasets are publicly available on Zenodo: **[10.5281/zenodo.19410960]**
 
 ## 📝 Citation
 
 If you utilize any of these pipelines or modified portions of this code in your research, please cite the corresponding manuscript:
 
-Alma Alva, Rogelio Hernández-Tamayo, Carmen Guadarrama, Paúl Hernández-Herrera, Martin Thanbichler, Peter L. Graumann, Christopher Wood, Adán Guerrero, José Luis Puente. (2026). *Spatiotemporal organization of GrlR and GrlA dictates virulence gene expression in enteropathogenic Escherichia coli*. Under Review.
+Alma Alva, Rogelio Hernández-Tamayo, Carmen Guadarrama, Paúl Hernández-Herrera, Martin Thanbichler, Peter L. Graumann, Christopher Wood, Adán Guerrero, José Luis Puente. **Regulator balance and spatiotemporal organization shape virulence gene activation in enteropathogenic Escherichia coli** (2026) Under review.
